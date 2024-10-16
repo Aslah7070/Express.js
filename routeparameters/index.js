@@ -34,12 +34,14 @@ app.get("/flights/:from-:to",(req,res)=>{
     
     res.send(`flight from ${from} to ${to}`)
 })
-app.get("/flights/:from-:to",(req,res)=>{
-    const {from,to}=req.params
-    console.log(from,to);
+app.get("/place/:state.:dis",(req,res)=>{
+    const {state,dis}=req.params
+     console.log(`I from ${dis} in ${state}`);
     
-    res.send(`flight from ${from} to ${to}`)
+    res.send(`I from ${dis} in ${state}`)
 })
+
+
    
 
 
